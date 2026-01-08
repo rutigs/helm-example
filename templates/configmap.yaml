@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: example-configmap 
+  namespace: example
+data:
+  ENVIRONMENT: {{ .Values.environment | quote }}
+  REGION: {{ .Values.region | quote }}
