@@ -5,3 +5,4 @@ metadata:
 data:
   ENVIRONMENT: {{ .Values.environment | quote }}
   REGION: {{ .Values.region | quote }}
+  VERSION: "0.0.1"
